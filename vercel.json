@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "webassistant/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "webassistant/wsgi.py"
+      }
+    ]
+  }
